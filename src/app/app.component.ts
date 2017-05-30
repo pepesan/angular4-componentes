@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  booleana=true;
+  numero=2;
+  cadena="otra cadena";
+  constructor(){
+    console.log("cargando AppComponent");
+  }
+
 }
