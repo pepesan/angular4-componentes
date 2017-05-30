@@ -4,6 +4,12 @@
 <div *ngIf="presenta">
   <p>Loren Ipsum</p>
 </div>
+<h4>Añadir Cliente</h4>
+<form (submit)="addCliente()" >
+  <input type="text" [(ngModel)]="texto"
+         [ngModelOptions]="{standalone: true}"/>
+</form>
+<p>{{texto}}</p>
 <ul>
   <li *ngFor="let item of miarray">
     {{item.nombre}}
